@@ -1,0 +1,17 @@
+Resumen proyecto FORMAR 2026 - Meneses et al.
+
+Las membranas de óxido de aluminio poroso (AAO, por sus iniciales en inglés) son utilizadas en numerosas aplicaciones, tales como biosensores para la determinación de concentración de glucosa, sensores ópticos de índices de refracción y moldes ordenados para la síntesis de nanopartículas y nanohilos. 
+
+Desde el punto de vista de las aplicaciones prácticas, la geometría de los moldes AAO es fundamental, caracterizada principalmente por el diámetro de los poros, la porosidad y la calidad del orden de largo alcance. 
+
+Estos parámetros suelen determinados a partir de imágenes obtenidas mediante microscopía electrónica de barrido (SEM), utilizando técnicas de análisis estadístico.
+
+Actualmente, el proceso de análisis se realiza manualmente, y a veces con algoritmos semi-automáticos. Este enfoque no solo es lento y propenso a errores, sino que además suele carecer de rigurosidad estadística. En muchos casos, los trabajos publicados reportan valores promedio sin describir adecuadamente la metodología empleada.
+
+Dado el continuo desarrollo y avance de las aplicaciones que utilizan moldes AAO, es previsible que en el futuro se requieran mayores estándares de calidad y métodos que permitan escalar los procesos de producción. En este sentido, automatizar el análisis de los parámetros geométricos de los moldes y brindar resultados precisos se convertirá en una prioridad central tanto en la industria como en las investigaciones científicas.
+
+Ante la falta un método automático y preciso que determine las características geométricas de moldes AAO, nuestra propuesta es diseñar un modelo de aprendizaje automático supervisado que prediga el diámetro medio, la porosidad y la calidad del orden de moldes AAO a partir de imágenes SEM, con un error relativo menor al 10% en cada parámetro. 
+
+Una vez que el algoritmo haya sido entrenado, generaremos un software que permita a los y las usuarias proveer al modelo con una imagen SEM, y como resultado obtener la predicción de los parámetros geométricos, sin necesidad de realizar calibraciones previas ni gastar tiempo en análisis manuales.
+
+Nuestro proyecto será pionero en la aplicación de técnicas de inteligencia artificial para el tratamiento de imágenes de moldes nanoporosos y supondrá una gran ventaja para usuarios que van desde la academia hasta el sector industrial.
