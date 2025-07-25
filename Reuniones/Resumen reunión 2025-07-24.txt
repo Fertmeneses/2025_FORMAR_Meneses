@@ -1,0 +1,48 @@
+Resumen reunión 2025-07-24
+
+=======================
+
+Asistentes:
+A. Ottaviano, J. Lezama, E. Druetta, L. Biedma, F. Meneses.
+
+=======================
+
+Temas discutidos:
+
+- Presentaciones personales.
+- Descripción general del proyecto.
+- Nociones básicas de los moldes AAO, aplicaciones, imágenes reales, industrias relacionadas.
+- Simulaciones para redes de un solo grano, con distorsiones, desarrolladas por AO y FM.
+- Simulaciones para redes de múltiples granos, desarrolladas por ED.
+- Algoritmos de visión de computadora (AI, pero no ML) para utilizar como línea de base en nuestro proyecto, y probablemente como elemento central en el desarrollo de un software.
+- Modelos de deep learning basados en redes convolucionales (AI, ML) para analizar imágenes y estudiar si superan a los algoritmos de visión por computadora en nuestro tema de estudio.
+- Obtención de imágenes experimentales para construir el set de evaluación (en proceso) y posibles métodos de etiquetado.
+- Tiempos del proyecto, relativos al trabajo final de AO, la presentación del proyecto FORMAR y nuestro avance independiente.
+- Hardware disponible para entrenar modelos de deep learning: GPUs personales, recursos virtuales como Google Colab, cluster de FAMAF.
+
+=======================
+
+Acciones a realizar:
+
+Esta reunión tuvo una finalidad introductoria y se esbozaron algunas líneas de acción:
+
+- Explorar la automatización de simulaciones para redes de múltiples granos.
+- Integrar los .txt que se obtienen con las simulaciones de múltiples granos con los algoritmos de AO, que introducen distorsiones arbitrarias en la red, para poder automatizar la generación de set de datos sintéticos.
+- Optimizar los algoritmos de visión por computadora para que procesen más eficientemente las imágenes, por ejemplo recortando la imagen para evitar el banner con información técnica.
+- Estimar los recursos necesarios para entrenar los modelos de deep learning.
+- Gestionar el uso de clusters de FAMAF para acelerar el proceso de producción.
+
+=======================
+
+Novedades:
+
+En el repositorio https://github.com/Fertmeneses/2025_FORMAR_Meneses la siguiente información ha sido agregada:
+
+- Diapositivas utilizadas en la presentación de esta reunión, y este resumen.
+
+- Código (Python) de las simulaciones de imágenes AAO de un solo grano. El código está estructurado de la siguiente manera:
+	* `sims_helper.py` contiene todas las funciones modulares necesarias para ejecutar la simulación.
+	* `sims_hexa_main.ipynb` permite al usuario elegir las condiciones de simulación y producir imágenes. 
+	* La imagen `Sim_AAO512x512_r30_c20_P0.51_porocirc_ordenhexa_rot-10_ruido1.00_rdesorden1_cdesorden3_seedNone.jpg` es un ejemplo de una simulación. El nombre del archivo lista los parámetros elegidos e información útil como la Porosidad ("P0.51").
+	
+- Ejemplos de imágenes experimentales.
